@@ -1,0 +1,27 @@
+@use "partial/variables.scss" as *;
+@use "partial/flex.scss" as *;
+
+.blue{
+    height: 100px;
+    width: 100%;
+    background-color: $prymary;
+    @include flex (center, flex, center);
+        ul{
+            width: 100%;
+            list-style: none;
+            @include flex (space-between, flex, center);
+            li{
+                a{
+                    @include flex (center, flex, center);
+                    gap: 10px;
+                    color: #fff;
+                    font-size: .8rem;
+                    text-decoration: none;
+                    img#buys{
+                        width: 30px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+}

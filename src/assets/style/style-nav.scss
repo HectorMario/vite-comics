@@ -1,0 +1,46 @@
+@use "partial/variables.scss" as *;
+@use "partial/flex.scss" as *;
+.white-container{
+    width: 100%;
+    @include flex (center, flex, start);
+    height: 80px;
+    .container {
+        @include flex (space-between, flex, start);
+        .logo{
+            height: 80px;
+            @include flex (center, flex, center);
+            img#logo{
+                object-fit: cover;
+                width: 60px;
+            }
+        }
+        .options{
+            display: flex;
+            align-items: center;
+            ul{
+                @include flex (center, flex, center);
+                gap: 10px;
+                list-style: none;
+                font-size: .9rem;
+               
+            }
+            li{
+                height: 80px;
+                @include flex (center, flex, center);
+                &:hover {
+                    color: $prymary;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+    }   
+}
+
+
+
+
+.active{
+    color: $prymary;
+    border-bottom: 2px $prymary solid; 
+}

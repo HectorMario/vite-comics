@@ -1,0 +1,78 @@
+@use "partial/variables.scss" as *;
+@use "partial/flex.scss" as *;
+
+
+.backgraund{
+    background-image: url(images/footer-bg.jpg);
+    background-size: cover;
+    height: 300px;
+    @include flex(center, flex, center);
+    .container{ 
+        @include flex(space-between, flex, center);
+        .left{
+            width: 50%;
+            @include flex(start, flex, start);
+            flex-direction: column;
+            height: 240px;
+            flex-wrap: wrap;
+            ul{
+                list-style: none;
+                color: #fff;
+                display: inline-block;
+                strong{
+                    font-size: 1.2rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: gray;
+                }
+                li{
+                    font-size: .7rem; 
+                }
+            }
+        }
+        .right{
+            width: 50%;
+            @include flex(center, flex, center);
+            img#dc-logo{
+                width: 380px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.contact{
+    background-color: #303030;
+    height: 80px;
+    @include flex (center, flex, center);
+    .container{
+        @include flex (space-between, flex, center);
+        .left-contact{
+            button{
+                border: $prymary 2px solid;
+                background-color: #303030;
+                padding: 10px;
+                color: #fff
+            }
+        }
+        .right-contact{
+            @include flex (center, flex, center);
+            strong{
+                color: $prymary;
+                font-size: 1rem;
+            }
+            ul{
+                @include flex (center, flex, center);
+                gap: 10px;
+                list-style: none;
+                a{
+                    @include flex (center, flex, center);
+                    img#social{
+                        width: 25px;
+                    }
+                }
+                }
+        }
+    }
+}
