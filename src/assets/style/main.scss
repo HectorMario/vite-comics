@@ -13,11 +13,18 @@
         z-index: 200;
     }
     .container{
-        
+        position: relative;
         .category{
-
+            position: absolute;
+            top: -18px;
+            z-index: 1000;
+            color: #fff;
+            background-color: $prymary;
+            padding: 5px 10px;
+            font-size: 1rem;
         }
         .triller{
+            margin-top: 40px;
             @include flex(center, flex , center);
             .series{
                 @include flex(center, flex , center);
@@ -33,11 +40,22 @@
                         object-fit: cover;
                     }
                     p{
+                        margin-top: 5px;
                         color: #fff;
                     }
                 }
 
             }
+        }
+    }
+    .load{
+        button{
+            margin: 20px 0;
+            padding: 10px 30px;
+            background-color: $prymary;
+            border: none;
+            color: #fff;
+            cursor: pointer;
         }
     }
 }

@@ -95,6 +95,9 @@ const dc =[
             </div>
 
         </div>
+        <div class="load">
+            <button>LOAD MORE</button>
+        </div>
     </div>
 </template>
 
