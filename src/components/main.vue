@@ -88,7 +88,9 @@ const dc =[
             <div class="triller">
                 <div class="series">
                     <div class="serie" v-for="serie in dc">
-                        <img :src="serie.thumb" alt="" id="Serial">
+                        <div class="ima">  
+                            <img :src="serie.thumb" alt="" id="Serial">
+                        </div>
                         <p>{{ serie.series }}</p>
                     </div>
                 </div>
